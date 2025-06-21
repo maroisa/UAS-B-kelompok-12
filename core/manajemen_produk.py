@@ -6,21 +6,17 @@ from classes.kue_kering.butter_cookies import ButterCookies
 from classes.kue_kering.muffin import Muffin
 
 def input_bahan_baku():
-    daftar_bahan = []
-    print("\nMasukkan daftar bahan baku:")
+    bahan = []
+    print("Masukkan bahan baku satu per satu (contoh: 'Tepung 200 gram')")
+    print("Ketik 'selesai' jika sudah selesai.")
+    
     while True:
-        nama = input("  Nama bahan (atau ketik 'selesai' untuk berhenti): ").strip()
-        if nama.lower() == "selesai":
+        baris = input("  > ").strip()
+        if baris.lower() == 'selesai':
             break
-        try:
-            jumlah = float(input(f"  Jumlah untuk {nama}: "))
-            satuan = input(f"  Satuan (misal gram, ml, pcs): ")
-        except ValueError:
-            print("  Input jumlah tidak valid.")
-            continue
-        bahan = {"nama": nama, "jumlah": jumlah, "satuan": satuan}
-        daftar_bahan.append(bahan)
-    return daftar_bahan
+        if baris:
+            bahan.append(baris)
+    return bahan
 
 class ManajemenProduk:
     def __init__(self):
