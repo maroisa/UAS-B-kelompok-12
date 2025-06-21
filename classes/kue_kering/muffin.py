@@ -1,4 +1,4 @@
-from kue_kering import KueKering
+from classes.kue_kering.kue_kering import KueKering
 from interfaces.pengembangan import Pengembangan
 import time
 class Muffin(KueKering, Pengembangan):

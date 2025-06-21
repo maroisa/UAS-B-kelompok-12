@@ -1,4 +1,4 @@
-from roti import Roti
+from classes.roti.roti import Roti
 from interfaces.pengembangan import Pengembangan
 import time
 class Croissant(Roti, Pengembangan):

@@ -1,4 +1,4 @@
-from kue_kering import KueKering
+from classes.kue_kering.kue_kering import KueKering
 import time
 class ButterCookies(KueKering):
     def __init__(self, kode, nama, daftar_bahan_baku, biaya_produksi, harga_jual):
