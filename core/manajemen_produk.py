@@ -34,7 +34,7 @@ class ManajemenProduk:
         print("\n=== Tambah Produk Baru ===")
         for kode, (nama_produk, _) in produk_map.items():
             print(f"{kode}. {nama_produk}")
-        pilihan = str(input_pilihan("Pilih jenis produk (1-4): ", (1, 2, 3, 4)))
+        pilihan = str(input_pilihan("Pilih jenis produk (1-4): ", 4))
         while True:
             kode=input("Masukkan Kode Produk: ").upper()
             if any(k.kode == kode for k in  self.daftar_produk):

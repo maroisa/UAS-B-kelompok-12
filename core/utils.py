@@ -1,9 +1,9 @@
-def input_pilihan(message: str, pilihanArr: tuple):
+def input_pilihan(message: str, pilihanNum: int):
     while True:
         pilihan = input_int(message)
-        if pilihan in pilihanArr: return pilihan
+        if pilihan in range(1, pilihanNum + 1): return pilihan
         else:
-            print(f"Pilihan tidak valid. Harap masukkan salah satu dari {pilihanArr}.")
+            print(f"Pilihan tidak valid. Harap masukkan salah satu dari {tuple(range(1, pilihanNum + 1))}.")
 
 
 def input_int(message: str):
