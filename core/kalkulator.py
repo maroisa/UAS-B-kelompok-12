@@ -12,6 +12,6 @@ def input_produk():
     print("3. Butter Cookies")
     print("4. Muffin")
 
-    jawaban = utils.input_pilihan("Pilih jenis produk (1-4): ", (1,2,3,4))
+    jawaban = utils.input_pilihan("Pilih jenis produk (1-4): ", 4)
     jumlah = utils.input_int("Jumlah produk (pcs): ")
     
