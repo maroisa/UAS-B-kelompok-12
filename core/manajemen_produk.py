@@ -31,7 +31,6 @@ class ManajemenProduk:
             "3": ("Butter Cookies", ButterCookies),
             "4": ("Muffin", Muffin)
         }
-        print("\n=== Tambah Produk Baru ===")
         for kode, (nama_produk, _) in produk_map.items():
             print(f"{kode}. {nama_produk}")
         pilihan = str(input_pilihan("Pilih jenis produk (1-4): ", (1, 2, 3, 4)))
@@ -48,7 +47,12 @@ class ManajemenProduk:
                 return
             else:
                 break
-        biaya = input_int("Masukkan biaya produksi: ")
+        while True:
+            biaya = input_int("Masukkan biaya produksi: ")
+            if biaya < 0:
+                print("Biaya produksi tidak boleh negatif.")
+            else:
+                break
         while True:
             harga = input_int("Masukkan harga jual: ")
             if harga < biaya:

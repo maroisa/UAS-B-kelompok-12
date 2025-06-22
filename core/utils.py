@@ -11,9 +11,6 @@ def input_int(message: str):
         nilai = input(message)
         try: 
             nilai = int(nilai)
-            if nilai < 0:
-                print("Input tidak boleh negatif!")
-                continue
             return nilai
         except: 
             print("Input harus berupa angka!")
