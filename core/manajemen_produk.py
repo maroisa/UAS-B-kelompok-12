@@ -4,6 +4,7 @@ from classes.roti.roti_manis import RotiManis
 from classes.roti.croissant import Croissant
 from classes.kue_kering.butter_cookies import ButterCookies
 from classes.kue_kering.muffin import Muffin
+from core.utils import input_pilihan, input_int
 
 def input_bahan_baku():
     bahan = []
@@ -18,17 +19,6 @@ def input_bahan_baku():
             bahan.append(baris)
     return bahan
 
-def input_int(prompt):
-    while True:
-        try:
-            nilai = int(input(prompt))
-            if nilai < 0:
-                print("Input tidak boleh negatif.")
-                continue
-            return nilai
-        except ValueError:
-            print("Input tidak valid. Harap masukkan angka!")
-
 class ManajemenProduk:
     """Kelas untuk mengelola data produk roti/kue (tambah & tampil)."""
     def __init__(self):
@@ -41,14 +31,10 @@ class ManajemenProduk:
             "3": ("Butter Cookies", ButterCookies),
             "4": ("Muffin", Muffin)
         }
+        print("\n=== Tambah Produk Baru ===")
         for kode, (nama_produk, _) in produk_map.items():
             print(f"{kode}. {nama_produk}")
-        while True:
-            pilihan = input("Pilih jenis produk (1-4): ")
-            if pilihan not in produk_map:
-                print("Produk tidak valid. Harap masukkan angka 1-4.")
-            else:
-                break
+        pilihan = str(input_pilihan("Pilih jenis produk (1-4): ", (1, 2, 3, 4)))
         while True:
             kode=input("Masukkan Kode Produk: ").upper()
             if any(k.kode == kode for k in  self.daftar_produk):
