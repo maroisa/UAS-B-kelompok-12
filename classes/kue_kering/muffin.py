@@ -51,6 +51,33 @@ class Muffin(KueKering, Pengembangan):
             time.sleep(2)
             print('.', end='', flush=True)
 
+    def topping(self):
+        print("mendinginkan muffin di rak kawat.")
+        print("Sedang dalam proses", end='', flush=True)
+        for _ in range(3):  
+            time.sleep(2)
+            print('.', end='', flush=True)
+        print("Menyiapkan topping")
+        print("Sedang dalam proses", end='', flush=True)
+        for _ in range(3):  
+            time.sleep(2)
+            print('.', end='', flush=True)
+        print("Mengoleskan bagian atas muffin dengan topping cair")
+        print("Sedang dalam proses", end='', flush=True)
+        for _ in range(3):  
+            time.sleep(2)
+            print('.', end='', flush=True)
+        print("Memberikan hiasan dengan topping padat sebelum topping cair mengeras")
+        print("Sedang dalam proses", end='', flush=True)
+        for _ in range(3):  
+            time.sleep(2)
+            print('.', end='', flush=True)
+        print("Mendiamkan muffin di suhu ruang hingga topping meneras")
+        print("Sedang dalam proses", end='', flush=True)
+        for _ in range(3):  
+            time.sleep(2)
+            print('.', end='', flush=True)
+
     def tampilkan_produk(self):
         print(f"Kode Produk: {self.kode}")
         print(f"Nama Produk: {self.nama}")
