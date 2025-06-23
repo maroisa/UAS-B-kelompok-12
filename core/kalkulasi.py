@@ -1,5 +1,9 @@
 from core import utils
 
+from classes.kue_kering.kue_kering import KueKering
+from interfaces.pengembangan import Pengembangan
+
+# Kalkulator
 def input_produk(produk):
     jumlah = utils.input_int("Masukkan jumlah produk (pcs): ")
     profit = hitung_profit(produk)
@@ -10,3 +14,18 @@ def input_produk(produk):
 
 def hitung_profit(produk):
     return produk.harga_jual - produk.biaya_produksi
+
+# Simulasi
+def simulasi(produk):
+    print(f"Melakukan pembuatan {produk.nama}...")
+    produk.pengadonan()
+
+    if isinstance(produk, Pengembangan):
+        produk.pengembangan()
+    
+    produk.pemanggangan()
+    
+    if isinstance(produk, KueKering):
+        produk.topping()
+    
+    print(f"\n\n=== {produk.nama.upper()} SUDAH SIAP DISAJIKAN! ===\n")
