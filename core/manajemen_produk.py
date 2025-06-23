@@ -46,7 +46,7 @@ class ManajemenProduk:
             ),
             Croissant(
                 kode="CR001",
-                nama="Croissant",
+                nama="Croissant Standar",
                 daftar_bahan_baku=[
                     "525 gr tepung terigu serbaguna",
                     "250 ml air",
@@ -62,7 +62,7 @@ class ManajemenProduk:
             ),
             ButterCookies(
                 kode="BC001",
-                nama="Butter Cookies",
+                nama="Butter Cookies(basic)",
                 daftar_bahan_baku=[
                     "100 gr mentega tawar",
                     "55 gr gula halus",
@@ -77,7 +77,7 @@ class ManajemenProduk:
             ),
             Muffin(
                 kode="MF001",
-                nama="Muffin",
+                nama="Muffin(basic)",
                 daftar_bahan_baku=[
                     "250 gram tepung terigu",
                     "150 gram gula pasir",
@@ -144,7 +144,16 @@ class ManajemenProduk:
             print("Belum ada produk yang ditambahkan.")
             return
 
-        print("\n=== Daftar Produk ===")
         for i, produk in enumerate(self.daftar_produk, 1):
+            if isinstance(produk, RotiManis):
+                print(f"\nJenis Produk {i}: Roti Manis")
+            elif isinstance(produk, Croissant):
+                print(f"\nJenis Produk {i}: Croissant")
+            elif isinstance(produk, ButterCookies):
+                print(f"\nJenis Produk {i}: Butter Cookies")
+            elif isinstance(produk, Muffin):
+                print(f"\nJenis Produk {i}: Muffin")
+            else:
+                console.print(f"\Jenis {i}: Produk Tidak Dikenal", style="#CD5C5C")
             print(f"\nProduk {i}: {produk.nama}")
             produk.tampilkan_produk()
