@@ -79,5 +79,5 @@ class Muffin(KueKering, Pengembangan):
         print("Bahan Baku:")
         for b in self.daftar_bahan_baku:
             print(f"  - {b}")
-        print(f"Biaya Produksi: Rp{self.biaya_produksi}")
-        print(f"Harga Jual: Rp{self.harga_jual}")
+        print(f"Biaya Produksi: Rp{self.biaya_produksi} per pcs")
+        print(f"Harga Jual: Rp{self.harga_jual} per pcs")
