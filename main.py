@@ -57,12 +57,14 @@ def main():
              if not manage.daftar_produk:
                console.print("[#CD5C5C]Belum ada produk yang ditambahkan.[/#CD5C5C]")
                continue
-             kode = input("Masukkan kode produk: ").upper()
-             produk = next((p for p in manage.daftar_produk if p.kode == kode), None)
-             if produk:
-               kalkulasi.input_produk(produk)
-             else:
-                 console.print("[#CD5C5C]Kode produk tidak ditemukan.[/#CD5C5C]")
+             while True:
+               kode = console.input("\n[#87CEFA]Masukkan kode produk: [/#87CEFA]").upper()
+               produk = next((p for p in manage.daftar_produk if p.kode == kode), None)
+               if produk:
+                    kalkulasi.input_produk(produk)
+                    break  
+               else:
+                    console.print("[#CD5C5C]Kode produk tidak ditemukan. Coba lagi.[/#CD5C5C]")
 
         elif pilih_opsi == 4:
              console.print("=" * 31,style="#FFD700")
@@ -73,12 +75,15 @@ def main():
              if not manage.daftar_produk:
                console.print("[#CD5C5C]Belum ada produk yang ditambahkan.[/#CD5C5C]")
                continue
-             kode = input("Masukkan kode produk: ").upper()
-             produk = next((p for p in manage.daftar_produk if p.kode == kode), None)
-             if produk:
-                 kalkulasi.simulasi(produk)
-             else:
-                 console.print("[#CD5C5C]Kode produk tidak ditemukan.[/#CD5C5C]")
+             while True:
+               kode = console.input("\n[#87CEFA]Masukkan kode produk: [/#87CEFA]").upper()
+               produk = next((p for p in manage.daftar_produk if p.kode == kode), None)
+
+               if produk:
+                    kalkulasi.simulasi(produk)
+                    break  
+               else:
+                    console.print("[#CD5C5C]Kode produk tidak ditemukan. Coba lagi.[/#CD5C5C]")
 
         elif pilih_opsi == 5:
              while True:
