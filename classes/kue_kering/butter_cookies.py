@@ -5,22 +5,12 @@ class ButterCookies(KueKering):
         super().__init__(kode, nama, daftar_bahan_baku, biaya_produksi, harga_jual)
 
     def pengadonan(self):
-        print("Mengocok mentega dan gula hingga pucat dan lembut")
+        print("Menyiapkan bahan")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
             print('.', end='', flush=True)
-        print("Menambahkan telur sambil diaduk hingga rata.")
-        print("Sedang dalam proses", end='', flush=True)
-        for _ in range(3):  
-            time.sleep(2)
-            print('.', end='', flush=True)
-        print("Memasukkan vanila dan garam.")
-        print("Sedang dalam proses", end='', flush=True)
-        for _ in range(3):  
-            time.sleep(2)
-            print('.', end='', flush=True)
-        print("Memasukkan tepung sedikit demi sedikit sambil diaduk hingga rata.")
+        print("Mencampur bahan.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
@@ -69,17 +59,7 @@ class ButterCookies(KueKering):
         for _ in range(3):  
             time.sleep(2)
             print('.', end='', flush=True)
-        print("Mengoleskan bagian atas cookies dengan topping cair")
-        print("Sedang dalam proses", end='', flush=True)
-        for _ in range(3):  
-            time.sleep(2)
-            print('.', end='', flush=True)
-        print("Memberikan hiasan dengan topping padat sebelum topping cair mengeras")
-        print("Sedang dalam proses", end='', flush=True)
-        for _ in range(3):  
-            time.sleep(2)
-            print('.', end='', flush=True)
-        print("Mendiamkan cookies di suhu ruang hingga topping meneras")
+        print("Memberikan hiasan dengan topping")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)

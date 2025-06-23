@@ -6,12 +6,12 @@ class RotiManis(Roti, Pengembangan):
         super().__init__(kode, nama, daftar_bahan_baku, biaya_produksi, harga_jual)
 
     def pengadonan(self):
-        print("Mencampurkan tepung terigu protein tinggi, gula, ragi instan, dan garam.")
+        print("Menyiapkan bahan")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
             print('.', end='', flush=True)
-        print("menambahkan susu/susu bubuk + air, telur, dan mentega/margarin.")
+        print("Mencampurkan bahan.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
@@ -28,17 +28,12 @@ class RotiManis(Roti, Pengembangan):
         for _ in range(3):  
             time.sleep(2)
             print('.', end='', flush=True)
-        print("Mengolesi permukaan roti dengan campuran kuning telur dan susu")
-        print("Sedang dalam proses", end='', flush=True)
-        for _ in range(3):  
-            time.sleep(2)
-            print('.', end='', flush=True)
         print("Memanggang roti manis hingga matang dan berwarna cokelat keemasan.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
             print('.', end='', flush=True)
-        print("Mengangkat dan mendinginkan roti manis, lalu mengoleskan margarin di atasnya agar permukaan lembut dan mengilap.")
+        print("Mengangkat dan mendinginkan roti manis.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)

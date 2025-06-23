@@ -6,17 +6,12 @@ class Muffin(KueKering, Pengembangan):
         super().__init__(kode, nama, daftar_bahan_baku, biaya_produksi, harga_jual)
 
     def pengadonan(self):
-        print("Mencampur bahan kering seperti tepung terigu, baking powder, garam, gula.")
+        print("Menyiapkan bahan")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
             print('.', end='', flush=True)
-        print("Mencampur bahan basah seperti telur, susu, minyak/cairan lemak, vanila.")
-        print("Sedang dalam proses", end='', flush=True)
-        for _ in range(3):  
-            time.sleep(2)
-            print('.', end='', flush=True)
-        print("Menyatukan bahan kering dan basah dan mengaduknya secara perlahan sampai tercampur")
+        print("Mencampur bahan.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
@@ -45,7 +40,7 @@ class Muffin(KueKering, Pengembangan):
             print('.', end='', flush=True)
 
     def pengembangan(self):
-        print("lanjut ke proses pemanggangan karena muffin menggunakan baking powder sebagai pengembang cepat.")
+        print("lanjut ke proses pemanggangan karena muffin mengembang cepat ketika di panggang.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
@@ -62,17 +57,7 @@ class Muffin(KueKering, Pengembangan):
         for _ in range(3):  
             time.sleep(2)
             print('.', end='', flush=True)
-        print("Mengoleskan bagian atas muffin dengan topping cair")
-        print("Sedang dalam proses", end='', flush=True)
-        for _ in range(3):  
-            time.sleep(2)
-            print('.', end='', flush=True)
-        print("Memberikan hiasan dengan topping padat sebelum topping cair mengeras")
-        print("Sedang dalam proses", end='', flush=True)
-        for _ in range(3):  
-            time.sleep(2)
-            print('.', end='', flush=True)
-        print("Mendiamkan muffin di suhu ruang hingga topping meneras")
+        print("Memberikan hiasan dengan topping")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)

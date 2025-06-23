@@ -6,7 +6,12 @@ class Croissant(Roti, Pengembangan):
         super().__init__(kode, nama, daftar_bahan_baku, biaya_produksi, harga_jual)
 
     def pengadonan(self):
-        print("Mencampurkan tepung terigu protein tinggi, gula, ragi instan, garam, susu dingin, dan sedikit mentega.")
+        print("Menyiapkan bahan")
+        print("Sedang dalam proses", end='', flush=True)
+        for _ in range(3):  
+            time.sleep(2)
+            print('.', end='', flush=True)
+        print("Mencampurkan bahan.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
@@ -28,24 +33,19 @@ class Croissant(Roti, Pengembangan):
         for _ in range(3):  
             time.sleep(2)
             print('.', end='', flush=True)
-        print("Mengoleskan permukaan croissant dengan telur")
+        print("Memanggang croissant hingga berwarna cokelat keemasan dan lapisannya terlihat mengembang dan renyah.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
             print('.', end='', flush=True)
-        print("Memanggang croissant hingga berwarna cokelat keemasan dan lapisannya terlihat mengembang dan renyah.")
+        print("Mengangkat dan mendinginkan croissant.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
             print('.', end='', flush=True)
 
     def pengembangan(self):
-        print("Menyiapkan mentega laminasi: pipihkan mentega dingin (bentuk persegi) untuk dilipat ke dalam adonan.")
-        print("Sedang dalam proses", end='', flush=True)
-        for _ in range(3):  
-            time.sleep(2)
-            print('.', end='', flush=True)
-        print("Menggilas adonan dan bungkus mentega di tengahnya.")
+        print("Menggilas adonan di tengahnya.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
             time.sleep(2)
