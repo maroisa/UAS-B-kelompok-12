@@ -9,13 +9,13 @@ class Muffin(KueKering, Pengembangan):
         print("Menyiapkan bahan")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(0.5)
+            time.sleep(1)
             print('.', end='', flush=True)
         print()
         print("Mencampur bahan.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(0.5)
+            time.sleep(1)
             print('.', end='', flush=True)
         print()
 
@@ -23,25 +23,25 @@ class Muffin(KueKering, Pengembangan):
         print("Memanaskan oven hingga suhu 175–190°C.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(0.5)
+            time.sleep(1)
             print('.', end='', flush=True)
         print()
         print("Menuangkan adonan ke dalam cup muffin")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(0.5)
+            time.sleep(1)
             print('.', end='', flush=True)
         print()
         print("Memanggang muffin sampai bagian atas mengembang dan matang")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(0.5)
+            time.sleep(1)
             print('.', end='', flush=True)
         print()
         print("Mengeluarkan muffin dari oven mendinginkannya di rak kawat")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(0.5)
+            time.sleep(1)
             print('.', end='', flush=True)
         print()
 
@@ -49,7 +49,7 @@ class Muffin(KueKering, Pengembangan):
         print("lanjut ke proses pemanggangan karena muffin mengembang cepat ketika di panggang.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(0.5)
+            time.sleep(1)
             print('.', end='', flush=True)
         print()
 
@@ -57,19 +57,19 @@ class Muffin(KueKering, Pengembangan):
         print("mendinginkan muffin di rak kawat.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(0.5)
+            time.sleep(1)
             print('.', end='', flush=True)
         print()
         print("Menyiapkan topping")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(0.5)
+            time.sleep(1)
             print('.', end='', flush=True)
         print()
         print("Memberikan hiasan dengan topping")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(0.5)
+            time.sleep(1)
             print('.', end='', flush=True)
         print()
 
