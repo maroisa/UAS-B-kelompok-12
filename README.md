@@ -19,12 +19,12 @@ python3 main.py
 ```
 
 ## Pengembang
-| No | Nama | NIM |
-|--|--|--|
-|1.|Ahmad Roisul Ahsan|K3524004|
-|2.|Angger Cahya Utama|K3524044|
-|3.|Nadhif athaasyam nurdewana|K3524062|
-|4.|Yusharyahya Al-Ghifari|K3524070|
+| No | Nama | NIM |Pembagian|
+|--|--|--|--|
+|1.|Ahmad Roisul Ahsan|K3524004|Fitur Kalkulator dan Simulasi|
+|2.|Angger Cahya Utama|K3524044|Membuat Struktur Class|
+|3.|Nadhif Athaasyam Nurdewana|K3524062|Merancang dan Membuat Flow Program|
+|4.|Yusharyahya Al-Ghifari|K3524070|Fitur Menambah dan Menampilkan Produk|
 
 ## Sponsor
 Tidak ada.
