@@ -1,11 +1,11 @@
-from core import utils
 
+from core import utils
 from classes.kue_kering.kue_kering import KueKering
 from interfaces.pengembangan import Pengembangan
 
 # Kalkulator
 def input_produk(produk):
-    jumlah = utils.input_int("Masukkan jumlah produk (pcs): ")
+    jumlah = utils.input_int("Masukkan jumlah produk (pcs)")
     profit = hitung_profit(produk)
     print("Biaya Produksi:", produk.biaya_produksi)
     print("Harga Jual:", produk.harga_jual)
