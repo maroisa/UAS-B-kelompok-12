@@ -9,23 +9,23 @@ console = Console()
 
 # Kalkulator
 def input_produk(produk):
-    jumlah = utils.input_int("Masukkan jumlah produk (pcs)")
+    jumlah = utils.input_int("[#87CEFA]Masukkan jumlah produk (pcs)[/#87CEFA]")
     profit = hitung_profit(produk)
     console.print(
         "[#87CEFA]Biaya Produksi:[/#87CEFA]", 
-        format_rupiah(produk.biaya_produksi), highlight=False
+        utils.format_rupiah(produk.biaya_produksi), highlight=False
     )
     console.print(
-        "[#87CEFA]Harga Jual:[/#87CEFA]", format_rupiah(produk.harga_jual), 
+        "[#87CEFA]Harga Jual:[/#87CEFA]", utils.format_rupiah(produk.harga_jual), 
         highlight=False
     )
     console.print(
-        "[#87CEFA]Profit:[/#87CEFA]", format_rupiah(profit), 
+        "[#87CEFA]Profit:[/#87CEFA]", utils.format_rupiah(profit), 
         highlight=False
     )
     console.print(
         f"[#87CEFA]Total profit ({jumlah} pcs):[/#87CEFA]", 
-        format_rupiah(profit * jumlah), highlight=False
+        utils.format_rupiah(profit * jumlah), highlight=False
     )
 
     time.sleep(2)
@@ -47,6 +47,3 @@ def simulasi(produk):
         produk.topping()
     
     print(f"\n\n=== {produk.nama.upper()} SUDAH SIAP DISAJIKAN! ===\n")
-
-def format_rupiah(angka):
-    return f"Rp{int(angka):,}".replace(",", ".")

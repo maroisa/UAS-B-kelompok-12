@@ -6,7 +6,7 @@ from classes.roti.croissant import Croissant
 from classes.kue_kering.butter_cookies import ButterCookies
 from classes.kue_kering.muffin import Muffin
 
-from core.utils import input_pilihan, input_int
+from core.utils import input_pilihan, input_int, format_rupiah
 
 console=Console()
 def input_bahan_baku():
@@ -110,7 +110,7 @@ class ManajemenProduk:
                 console.print(f'[Kode {kode}] sudah Terdaftar! Harap Masukkan kode dengan benar', style="#CD5C5C")
             else: break
         nama = input("Masukkan nama produk: ").title()
-        jumlah = input_int("Masukkan jumlah produk sesuai bahan: ")
+        jumlah = input_int("Masukkan jumlah produk sesuai bahan")
         while True:
             print(f"Masukkan bahan baku produk untuk {jumlah} pcs ")
             bahan = input_bahan_baku()
@@ -120,15 +120,15 @@ class ManajemenProduk:
             else:
                 break
         while True:
-            biaya = input_int(f"Masukkan biaya produksi untuk {jumlah} pcs: ")
+            biaya = input_int(f"Masukkan biaya produksi untuk {jumlah} pcs")
             if biaya < 0:
                 console.print("Biaya produksi tidak boleh negatif.", style="#CD5C5C")
             else:
                 break
         biaya_per_pcs = biaya / jumlah
-        console.print(f"Biaya produksi per pcs: {biaya_per_pcs:.2f}", style="#90EE90")
+        console.print(f"Biaya produksi per pcs: {format_rupiah(biaya_per_pcs)}", style="#90EE90")
         while True:
-            harga = input_int("Masukkan harga jual untuk 1 pcs: ")
+            harga = input_int("Masukkan harga jual untuk 1 pcs")
             if harga < biaya_per_pcs:
                 console.print("Harga jual tidak boleh kurang dari biaya produksi.", style="#CD5C5C")
             else:

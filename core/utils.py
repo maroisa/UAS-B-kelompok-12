@@ -10,10 +10,14 @@ def input_pilihan(message: str, pilihanNum: int):
 
 def input_int(message: str):
     while True:
-        nilai = Prompt.ask(f"[#87CEFA]{message}[/#87CEFA]")
+        nilai = Prompt.ask(f"{message}")
         try: 
             nilai = int(nilai)
             return nilai
         except: 
             print("Input harus berupa angka!",style="#CD5C5C")
             continue
+
+
+def format_rupiah(angka):
+    return f"Rp{int(angka):,}".replace(",", ".")
