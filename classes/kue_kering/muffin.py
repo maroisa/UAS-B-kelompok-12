@@ -1,3 +1,5 @@
+from core.utils import format_rupiah
+
 from classes.kue_kering.kue_kering import KueKering
 from interfaces.pengembangan import Pengembangan
 import time
@@ -79,5 +81,5 @@ class Muffin(KueKering, Pengembangan):
         print("Bahan Baku:")
         for b in self.daftar_bahan_baku:
             print(f"  - {b}")
-        print(f"Biaya Produksi: Rp{self.biaya_produksi} per pcs")
-        print(f"Harga Jual: Rp{self.harga_jual} per pcs")
+        print(f"Biaya Produksi: {format_rupiah(self.biaya_produksi)} per pcs")
+        print(f"Harga Jual: {format_rupiah(self.harga_jual)} per pcs")
