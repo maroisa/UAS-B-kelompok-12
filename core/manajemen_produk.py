@@ -103,7 +103,7 @@ class ManajemenProduk:
         }
         for kode, (nama_produk, _) in produk_map.items():
             print(f"{kode}. {nama_produk}")
-        pilihan = str(input_pilihan("Pilih jenis produk (1-4): ", 4))
+        pilihan = str(input_pilihan("Pilih jenis produk (1-4)", 4))
         while True:
             kode=input("Masukkan Kode Produk: ").upper()
             if any(k.kode == kode for k in  self.daftar_produk):
@@ -126,7 +126,7 @@ class ManajemenProduk:
             else:
                 break
         biaya_per_pcs = biaya / jumlah
-        console.print(f"Biaya produksi per pcs: {format_rupiah(biaya_per_pcs)}", style="#90EE90")
+        print(f"Biaya produksi per pcs: {format_rupiah(biaya_per_pcs)}")
         while True:
             harga = input_int("Masukkan harga jual untuk 1 pcs")
             if harga < biaya_per_pcs:
