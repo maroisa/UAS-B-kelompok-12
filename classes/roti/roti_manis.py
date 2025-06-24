@@ -9,19 +9,19 @@ class RotiManis(Roti, Pengembangan):
         print("Menyiapkan bahan")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(2)
+            time.sleep(0.5)
             print('.', end='', flush=True)
         print()
         print("Mencampurkan bahan.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(2)
+            time.sleep(0.5)
             print('.', end='', flush=True)
         print()
         print("Menguleni adonan hingga kalis elastis")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(2)
+            time.sleep(0.5)
             print('.', end='', flush=True)
         print()
 
@@ -29,19 +29,19 @@ class RotiManis(Roti, Pengembangan):
         print("Memanaskan oven hingga suhu 170–180°C")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(2)
+            time.sleep(0.5)
             print('.', end='', flush=True)
         print()
         print("Memanggang roti manis hingga matang dan berwarna cokelat keemasan.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(2)
+            time.sleep(0.5)
             print('.', end='', flush=True)
         print()
         print("Mengangkat dan mendinginkan roti manis.")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(2)
+            time.sleep(0.5)
             print('.', end='', flush=True)
         print()
 
@@ -49,19 +49,19 @@ class RotiManis(Roti, Pengembangan):
         print("Mengistirahatkan adonan")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(2)
+            time.sleep(0.5)
             print('.', end='', flush=True)
         print()
         print("Mengempiskan adonan, lalu membentuknya sesuai selera")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(2)
+            time.sleep(0.5)
             print('.', end='', flush=True)
         print()
         print("Memfermentasikan adonan setelah dibentuk")
         print("Sedang dalam proses", end='', flush=True)
         for _ in range(3):  
-            time.sleep(2)
+            time.sleep(0.5)
             print('.', end='', flush=True)
         print()
 
