@@ -47,3 +47,4 @@ def simulasi(produk):
         produk.topping()
     
     print(f"\n\n=== {produk.nama.upper()} SUDAH SIAP DISAJIKAN! ===\n")
+    time.sleep(2)
